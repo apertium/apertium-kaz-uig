@@ -1,0 +1,20 @@
+<rules>
+  <rule>
+    <match lemma="адыр" tags="n.*"><select lemma="to'be" tags="n.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="ажар" tags="n.*"><select lemma="kelbet" tags="n.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="айғыз" tags="n.*"><select lemma="daq" tags="n.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="айғақ" tags="n.*"><select lemma="da'liyl" tags="n.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="айқай" tags="n.*"><select lemma="shawqım" tags="n.*"/></match>
+  </rule>
+  <rule>
+    <match lemma="ақпарат" tags="n.*"><select lemma="xabar" tags="n.*"/></match>
+  </rule>
+</rules>

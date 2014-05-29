@@ -1,0 +1,16 @@
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
+SOFT-DELIMITERS = "<,>";
+
+SETS
+
+LIST BOS = (>>>) (sent);
+LIST EOS = (<<<) (sent);
+
+LIST N = n ; 
+LIST Post = post ; 
+
+SECTION
+
+
+REMOVE Post if (-1 BOS);
+    ## Мен сизди анъламадым.
