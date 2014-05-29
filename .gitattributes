@@ -19,3 +19,5 @@
 /autogen.sh -text
 /configure.ac -text
 /modes.xml -text
+texts/story.kaz.txt -text svneol=unset#application/octet-stream
+texts/story.uig.txt -text svneol=unset#application/octet-stream
