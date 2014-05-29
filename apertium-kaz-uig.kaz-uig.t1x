@@ -3,6 +3,14 @@
 <transfer>
   <section-def-cats>
     
+    <def-cat n="prc-impf">
+      <cat-item tags="v.*.prc_impf"/>
+    </def-cat>
+     
+    <def-cat n="vaux-al">
+      <cat-item lemma="ал" tags="vaux.*"/>
+    </def-cat>
+     
     <def-cat n="nom">
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
@@ -12,6 +20,21 @@
   
   <section-def-attrs>
     
+    <def-attr n="a_verb">
+      <attr-item tags="v"/>
+      <attr-item tags="vaux"/>
+    </def-attr>
+ 
+    <def-attr n="tense">
+      <attr-item tags="past"/>
+      <attr-item tags="ifi"/>
+    </def-attr>
+ 
+    <def-attr n="trans">
+      <attr-item tags="tv"/>
+      <attr-item tags="iv"/>
+    </def-attr>
+ 
     <def-attr n="case">
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
@@ -29,7 +52,14 @@
       <attr-item tags="px2pl"/>
     </def-attr>
 
-    <def-attr n="nbr">
+    <def-attr n="pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="PD"/>
+    </def-attr>
+
+     <def-attr n="nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
       <attr-item tags="ND"/>
@@ -59,6 +89,30 @@
         </out>
       </action>
     </rule>
-    
+
+<!--   ^ئوينا<v><tv><prc_impf>$ ^al<vaux><neg><ifi><p3><sg>$
+       ^ئوينا<v><tv><abil><neg><past><p3><sg>$ -->
+   
+    <rule comment=""> 
+      <pattern>
+        <pattern-item n="prc-impf"/>
+        <pattern-item n="vaux-al"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="trans"/>
+            <lit-tag v="abil"/>
+            <clip pos="2" side="tl" part="tense"/>
+            <clip pos="2" side="tl" part="pers"/>
+            <clip pos="2" side="tl" part="nbr"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+ 
   </section-rules>
 </transfer>

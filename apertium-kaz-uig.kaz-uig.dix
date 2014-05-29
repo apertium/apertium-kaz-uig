@@ -33,6 +33,7 @@
     <sdef n="subst"     c="Substantivized"/> 
     <sdef n="advl"  c="Adverbial"/> 
     <sdef n="sg"    c=""/> 
+    <sdef n="dat"    c=""/> 
     <sdef n="pl"    c=""/> 
     <sdef n="sp"    c=""/> 
     <sdef n="px"    c=""/> 
@@ -691,7 +692,7 @@
     <e><p><l>ғылым<s n="n"/></l><r>ilim<s n="n"/></r></p></e>
     <e><p><l>дағдарыс<s n="n"/></l><r>dag'darıs<s n="n"/></r></p></e>
     <e><p><l>дайындық<s n="n"/></l><r>tayarlıq<s n="n"/></r></p></e>
-    <e><p><l>дала<s n="n"/></l><r>dala<s n="n"/></r></p></e>
+    <e><p><l>дала<s n="n"/></l><r>سىرت<s n="n"/></r></p></e>
     <e><p><l>дана<s n="n"/></l><r>dana<s n="n"/></r></p></e>
     <e><p><l>даналық<s n="n"/></l><r>danalıq<s n="n"/></r></p></e>
     <e><p><l>дан<s n="n"/></l><r>dan<s n="n"/></r></p></e>
@@ -2388,7 +2389,7 @@
     <e><p><l>жамбас<s n="n"/></l><r>jambas<s n="n"/></r></p></e>
     <e><p><l>сылтау<s n="n"/></l><r>sıltaw<s n="n"/></r></p></e>
     <e><p><l>ұш<s n="n"/></l><r>ush<s n="n"/></r></p></e>
-    <e><p><l>алд<s n="n"/></l><r>ald<s n="n"/></r></p></e>
+
     <e><p><l>ара<s n="n"/></l><r>ara<s n="n"/></r></p></e>
     <e><p><l>арқа<s n="n"/></l><r>arqa<s n="n"/></r></p></e>
     <e><p><l>арт<s n="n"/></l><r>art<s n="n"/></r></p></e>
@@ -3184,7 +3185,7 @@
 
 	<e><p><l>бүгін<s n="adv"/></l><r>بۈگۈن<s n="adv"/></r></p></e>
 	<e><p><l>енді<s n="adv"/></l><r>endi<s n="adv"/></r></p></e>
-	<e><p><l>кеше<s n="adv"/></l><r>تۆنۈكۈن<s n="adv"/></r></p></e>
+	<e><p><l>кеше<s n="adv"/></l><r>تۆنۈگۈن<s n="adv"/></r></p></e>
 	<e><p><l>қайта<s n="adv"/></l><r>qayta<s n="adv"/></r></p></e>
 	<e><p><l>ішінде<s n="adv"/></l><r>ishinde<s n="adv"/></r></p></e> <!-- "in" -->
 	<e><p><l>әрдайым<s n="adv"/></l><r>ha'r<b/>waqıt<s n="adv"/></r></p></e>
@@ -3194,7 +3195,9 @@
 	<e><p><l>еш<b/>қашан<s n="adv"/><s n="itg"/></l><r>hesh<b/>qashan<s n="adv"/><s n="itg"/></r></p></e> <!-- "never" -->
 	<e><p><l>мүмкін<s n="adv"/><s n="itg"/></l><r>mu'mkin<s n="adv"/><s n="itg"/></r></p></e> <!-- "probably" -->
 	<e><p><l>қашан<s n="adv"/><s n="itg"/></l><r>qashan<s n="adv"/><s n="itg"/></r></p></e> <!-- "where" (location) -->
-	<e><p><l>қайда<s n="adv"/><s n="itg"/></l><r>qayda<s n="adv"/><s n="itg"/></r></p></e> <!-- "where" (location) -->
+	<e><p><l>қайда<s n="adv"/><s n="itg"/></l><r>قايدا<s n="adv"/><s n="itg"/></r></p></e> <!-- "where" (location) -->
+
+
 
     <e><p><l>азғана<s n="adv"/></l><r>azg'ana<s n="adv"/></r></p></e>
     <e><p><l>азғантай<s n="adv"/></l><r>azg'antay<s n="adv"/></r></p></e>
@@ -3207,7 +3210,7 @@
     <e><p><l>бері<s n="adv"/></l><r>beri<s n="adv"/></r></p></e>
     <e><p><l>бәрібір<s n="adv"/></l><r>ba'ribir<s n="adv"/></r></p></e>
     <e><p><l>біраз<s n="adv"/></l><r>biraz<s n="adv"/></r></p></e>
-    <e><p><l>бірге<s n="adv"/></l><r>birge<s n="adv"/></r></p></e>
+    <e><p><l>бірге<s n="adv"/></l><r>بىرگە<s n="adv"/></r></p></e>
     <e><p><l>бірен-саран<s n="adv"/></l><r>аndа-sаndа<s n="adv"/></r></p></e>
     <e><p><l>біржола<s n="adv"/></l><r>birоtаlа<s n="adv"/></r></p></e>
     <e><p><l>біржолата<s n="adv"/></l><r>birоtаlа<s n="adv"/></r></p></e>
@@ -3353,7 +3356,7 @@
 
     <!-- SECTION: Auxilary verbs -->
 
-	<e><p><l>ал<s n="vaux"/></l><r>al<s n="vaux"/></r></p></e>
+	<e ><p><l>ал<s n="vaux"/></l><r>ئال<s n="vaux"/></r></p></e>
 	<e><p><l>біт<s n="vaux"/></l><r>pit<s n="vaux"/></r></p></e>
 	<e><p><l>жат<s n="vaux"/></l><r>jat<s n="vaux"/></r></p></e>
 	<e><p><l>жүр<s n="vaux"/></l><r>ju'r<s n="vaux"/></r></p></e>
@@ -3496,7 +3499,6 @@
     <e><p><l>сияқты<s n="post"/></l><r>sıyaqlı<s n="post"/></r></p></e>
     <e><p><l>соң<s n="post"/></l><r>son'<s n="post"/></r></p></e>
     <e><p><l>таман<s n="post"/></l><r>taman<s n="post"/></r></p></e>
-    <e><p><l>тарта<s n="post"/></l><r>jaqın/shama menen<s n="post"/></r></p></e>
     <e><p><l>таяу<s n="post"/></l><r>jaqın<s n="post"/></r></p></e>
     <e><p><l>туралы<s n="post"/></l><r>tuwralı<s n="post"/></r></p></e>
     <e><p><l>үшін<s n="post"/></l><r>ushın<s n="post"/></r></p></e>
@@ -3505,7 +3507,7 @@
 
     <!-- SECTION: Adverbial conjunctions -->
 
-	<e><p><l>осы<b/>себептен<s n="cnjadv"/></l><r>usı<b/>sebepten<s n="cnjadv"/></r></p></e>
+	<e><p><l>осы<b/>себептен<s n="cnjadv"/></l><r>شۇ<s n="prn"/><s n="dem"/><s n="dat"/></r></p></e>
 
     <!-- SECTION: Modal question particles -->
 
