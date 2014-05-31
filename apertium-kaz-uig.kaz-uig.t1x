@@ -2,8 +2,16 @@
 
 <transfer>
   <section-def-cats>
+
+     <def-cat n="ger-past-acc">
+      <cat-item tags="v.*.ger_past.acc"/>
+    </def-cat>
     
-    <def-cat n="prc-impf">
+    <def-cat n="jaqsy-kur">
+      <cat-item lemma="жақсы көр" tags="v.*"/>
+    </def-cat>
+
+     <def-cat n="prc-impf">
       <cat-item tags="v.*.prc_impf"/>
     </def-cat>
      
@@ -28,6 +36,11 @@
     <def-attr n="tense">
       <attr-item tags="past"/>
       <attr-item tags="ifi"/>
+    </def-attr>
+ 
+    <def-attr n="nonfin">
+      <attr-item tags="ger_past"/>
+      <attr-item tags="ger"/>
     </def-attr>
  
     <def-attr n="trans">
@@ -108,6 +121,26 @@
             <clip pos="2" side="tl" part="tense"/>
             <clip pos="2" side="tl" part="pers"/>
             <clip pos="2" side="tl" part="nbr"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment=""> 
+      <pattern>
+        <pattern-item n="ger-past-acc"/>
+        <pattern-item n="jaqsy-kur"/>
+      </pattern>
+      <action>
+        <let><clip pos="1" side="tl" part="case"/><lit-tag v="dat"/></let>
+        <let><clip pos="1" side="tl" part="nonfin"/><lit-tag v="ger"/></let>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
           </lu>
         </out>
       </action>
